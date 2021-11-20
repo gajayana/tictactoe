@@ -61,7 +61,7 @@ const select = (key) => {
       <div
         v-for="i in cellNumbers"
         :key="`cell-${i}`"
-        class="border border-black cursor-pointer flex items-center justify-center h-16 w-16"
+        class="border border-black cursor-pointer flex items-center justify-center h-16 w-16 text-4xl"
         @click="select(i)"
       >
         {{ label(i) }}
