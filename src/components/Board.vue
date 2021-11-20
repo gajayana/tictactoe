@@ -11,7 +11,6 @@ const store = useStore()
 // board setups
 const columns = computed(() => store.state.game.columns )
 const cellNumbers = computed(() => store.getters['game/getCellNumbers'])
-const winningCombinations = computed(() => store.getters['game/getWinningCombinations'])
 
 const gameIsStopped = computed(() => store.state.game.gameIsStopped)
 
@@ -53,7 +52,9 @@ const select = (key) => {
 
 <template>
   <div class="flex flex-col items-center h-full justify-center w-full">
-    <h1 class="font-bold mb-8 text-4xl">Tic Tac Toe</h1>
+    <h1 class="font-bold mb-8 text-4xl">
+      Tic Tac Toe
+    </h1>
 
     <LabelTurn />
     <LabelScore />

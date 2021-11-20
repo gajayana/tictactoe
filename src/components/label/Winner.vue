@@ -48,5 +48,7 @@ const winnerLabel = computed(() => {
 })
 </script>
 <template>
-  <h2 class="font-bold mb-4 text-xl">{{ winnerLabel }}</h2>
+  <h2 class="font-bold mb-4 text-xl">
+    {{ winnerLabel }}
+  </h2>
 </template>

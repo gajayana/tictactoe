@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src"
   },
   "dependencies": {
     "vue": "^3.2.16",
@@ -13,6 +14,8 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
     "autoprefixer": "^10.4.0",
+    "eslint": "^8.2.0",
+    "eslint-plugin-vue": "^8.1.1",
     "lodash.chunk": "^4.2.0",
     "lodash.intersectionwith": "^4.4.0",
     "postcss": "^8.3.11",

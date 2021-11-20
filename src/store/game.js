@@ -1,5 +1,4 @@
 import chunk from 'lodash.chunk'
-import intersectionWith from 'lodash.intersectionwith'
 export const game = {
   namespaced: true,
   state: () => ({

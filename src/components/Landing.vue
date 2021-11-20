@@ -15,17 +15,21 @@ const start = () => {
 <template>
   <div class="flex items-center h-full justify-center">
     <div class="flex flex-col items-center">
-      <h1 class="font-bold mb-8 text-4xl">Tic Tac Toe</h1>
-      <p class="mb-4">Select your columns and start the game!</p>
+      <h1 class="font-bold mb-8 text-4xl">
+        Tic Tac Toe
+      </h1>
+      <p class="mb-4">
+        Select your columns and start the game!
+      </p>
       <select
         v-model.number="size"
         class="border border-gray-300 mb-4 px-8 py-2 text-4xl"
       >
         <option
-          v-for="size in sizes"
-          :key="`size-${size}`"
+          v-for="item in sizes"
+          :key="`size-${item}`"
         >
-          {{ size }}
+          {{ item }}
         </option>
       </select>
       <button
