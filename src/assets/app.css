@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  html, body {
+  html, body, #app {
     @apply h-full w-full;
   }
 }
