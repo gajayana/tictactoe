@@ -3,7 +3,7 @@ import { ref, watchEffect } from 'vue'
 import { useStore } from 'vuex'
 
 const store = useStore()
-const size = ref(5)
+const size = ref(3)
 const sizes = ref([3,4,5,6])
 
 watchEffect(() => store.commit('game/setColumn', size.value))
