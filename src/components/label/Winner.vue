@@ -25,11 +25,13 @@ const winnerLabel = computed(() => {
 
   if (playerOne) {
     store.commit('game/setWinner', 1)
+    store.commit('game/setPlayerOneScore')
     res = 'Player 1 wins!'
   }
 
   if (playerTwo) {
     store.commit('game/setWinner', 2)
+    store.commit('game/setPlayerTwoScore')
     res = 'Player 2 wins!'
   }
 

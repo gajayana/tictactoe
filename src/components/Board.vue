@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useStore } from 'vuex'
 
 import ButtonRestart from './button/Restart.vue'
+import LabelScore from './label/Score.vue'
 import LabelTurn from './label/Turn.vue'
 import LabelWinner from './label/Winner.vue'
 
@@ -55,6 +56,7 @@ const select = (key) => {
     <h1 class="font-bold mb-8 text-4xl">Tic Tac Toe</h1>
 
     <LabelTurn />
+    <LabelScore />
     <LabelWinner />
 
     <div :class="['grid', `grid-cols-${columns}`, 'gap-0', 'mb-4', 'mx-auto']">

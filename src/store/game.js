@@ -9,6 +9,8 @@ export const game = {
     player: 1,
     playerOneCells: [],
     playerTwoCells: [],
+    playerOneScore: 0,
+    playerTwoScore: 0,
     winner: null
   }),
   mutations: {
@@ -38,6 +40,12 @@ export const game = {
     setPlayerTwoCells(state, payload) {
       state.playerTwoCells.push(payload)
       state.playerTwoCells.sort()
+    },
+    setPlayerOneScore(state) {
+      state.playerOneScore++
+    },
+    setPlayerTwoScore(state) {
+      state.playerTwoScore++
     },
     setWinner (state, payload) {
       state.winner = payload
